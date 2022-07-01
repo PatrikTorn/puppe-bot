@@ -1,0 +1,21 @@
+{
+  "name": "nodebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsdom": "^20.0.0",
+    "node-telegram-bot-api": "^0.58.0",
+    "turndown": "^7.1.1"
+  },
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "restart": "heroku restart",
+    "stop-server": "heroku ps:scale web=0",
+    "start-server": "heroku ps:scale web=1"
+  }
+}
