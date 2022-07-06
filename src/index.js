@@ -18,7 +18,7 @@ bot.onText(/\/juonto(\s.+)?/, async (msg, match) => {
   bot.sendMessage(chatId, markdown, MESSAGE_OPTIONS);
 });
 
-bot.onText(/\/wiki(\s.+)?/, async (msg, match) => {
+bot.onText(/\/(?:wiki|tarkka)(\s.+)?/, async (msg, match) => {
   const chatId = msg.chat.id;
   const markdown = await wiki(msg, match);
   bot.sendMessage(chatId, markdown, MESSAGE_OPTIONS);
