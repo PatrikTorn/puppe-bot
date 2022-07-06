@@ -9,6 +9,7 @@ Requirements: Node.js, npm, GIT
 ```
 git clone https://github.com/PatrikTorn/puppe-bot.git
 cd puppe-bot
+npm install yarn
 yarn install
 yarn start
 ```
